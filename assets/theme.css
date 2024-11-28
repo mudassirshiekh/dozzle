@@ -1,0 +1,6 @@
+@theme {
+  --color-base-lighter: var(--base-lighter-color);
+  --color-base-content: var(--base-content-color);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+}

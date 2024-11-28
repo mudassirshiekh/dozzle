@@ -118,7 +118,8 @@ function onResized(e: any) {
 </script>
 
 <style scoped>
-@import "@/main.css" theme(reference);
+@import "tailwindcss/theme" theme(reference);
+@import "@/theme.css" theme(reference);
 
 :deep(.splitpanes--vertical > .splitpanes__splitter) {
   @apply bg-base-lighter hover:bg-secondary min-w-[3px];

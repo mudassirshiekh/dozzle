@@ -1,6 +1,7 @@
 @import "splitpanes/dist/splitpanes.css" layer(base);
 
 @import "tailwindcss";
+@import "./theme.css";
 
 @config '../tailwind.config.ts';
 
@@ -43,11 +44,11 @@
   }
 }
 
-@utility active-primary {
+/* @utility active-primary {
   --n: var(--p);
   --nc: var(--pc);
   @apply active;
-}
+} */
 
 @utility link-primary {
   @apply underline-offset-4 hover:underline;

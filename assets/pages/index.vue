@@ -30,7 +30,8 @@ watchEffect(() => {
 });
 </script>
 <style scoped>
-@import "@/main.css" theme(reference);
+@import "tailwindcss/theme" theme(reference);
+@import "@/theme.css" theme(reference);
 
 :deep(tr td) {
   padding-top: 1em;

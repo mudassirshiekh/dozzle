@@ -212,7 +212,8 @@ const fakeMessages = computedWithControl(
 );
 </script>
 <style scoped>
-@import "@/main.css" theme(reference);
+@import "tailwindcss/theme" theme(reference);
+@import "@/theme.css" theme(reference);
 
 .has-underline {
   @apply border-base-content/50 mb-4 border-b py-4;
