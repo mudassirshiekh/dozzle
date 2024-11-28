@@ -29,7 +29,9 @@ watchEffect(() => {
   }
 });
 </script>
-<style lang="postcss" scoped>
+<style scoped>
+@import "@/main.css" theme(reference);
+
 :deep(tr td) {
   padding-top: 1em;
   padding-bottom: 1em;

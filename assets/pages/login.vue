@@ -1,8 +1,8 @@
 <template>
-  <div class="card w-96 flex-shrink-0 bg-base-lighter shadow-2xl">
+  <div class="card bg-base-lighter w-96 shrink-0 shadow-2xl">
     <div class="card-body">
       <form action="" method="post" @submit.prevent="onLogin" ref="form" class="flex flex-col gap-8">
-        <label class="input input-bordered flex items-center gap-2 border-2 has-[:focus]:input-primary">
+        <label class="input input-bordered has-focus:input-primary flex items-center gap-2 border-2">
           <mdi:account class="has-[+:focus]:text-primary" />
           <input
             type="text"
@@ -14,7 +14,7 @@
             required
           />
         </label>
-        <label class="input input-bordered flex items-center gap-2 border-2 has-[:focus]:input-primary">
+        <label class="input input-bordered has-focus:input-primary flex items-center gap-2 border-2">
           <mdi:key class="has-[+:focus]:text-primary" />
           <input
             type="password"

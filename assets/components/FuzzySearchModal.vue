@@ -21,13 +21,13 @@
       </form>
     </div>
     <div
-      class="dropdown-content !relative mt-2 max-h-[calc(100dvh-20rem)] w-full overflow-y-scroll rounded-md border-y-8 border-transparent bg-base-lighter px-2"
+      class="dropdown-content bg-base-lighter relative! mt-2 max-h-[calc(100dvh-20rem)] w-full overflow-y-scroll rounded-md border-y-8 border-transparent px-2"
       v-if="results.length"
     >
       <ul tabindex="0" class="menu">
         <li v-for="(result, index) in data" ref="listItems">
           <a
-            class="grid auto-cols-max grid-cols-[min-content,auto] gap-2 py-4"
+            class="grid auto-cols-max grid-cols-[min-content_auto] gap-2 py-4"
             @click.prevent="selected(result.item)"
             :class="index === selectedIndex ? 'focus' : ''"
           >

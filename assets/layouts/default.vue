@@ -25,8 +25,8 @@
       </pane>
     </splitpanes>
     <label
-      class="btn btn-circle swap btn-neutral swap-rotate fixed -left-12 bottom-4 w-16 transition-all hover:-left-4"
-      :class="{ '!-left-6': collapseNav }"
+      class="btn btn-circle swap btn-neutral swap-rotate fixed bottom-4 -left-12 w-16 transition-all hover:-left-4"
+      :class="{ '-left-6!': collapseNav }"
       v-if="!isMobile && !forceMenuHidden"
     >
       <input type="checkbox" v-model="collapseNav" />
@@ -117,9 +117,11 @@ function onResized(e: any) {
 }
 </script>
 
-<style scoped lang="postcss">
+<style scoped>
+@import "@/main.css" theme(reference);
+
 :deep(.splitpanes--vertical > .splitpanes__splitter) {
-  @apply min-w-[3px] bg-base-lighter hover:bg-secondary;
+  @apply bg-base-lighter hover:bg-secondary min-w-[3px];
 }
 
 @media screen and (max-width: 768px) {
