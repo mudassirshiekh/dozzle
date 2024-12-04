@@ -52,6 +52,7 @@ Here is the Docker Compose file:
 For advanced options like [authentication](https://dozzle.dev/guide/authentication), [remote hosts](https://dozzle.dev/guide/remote-hosts) or common [questions](https://dozzle.dev/guide/faq) see documentation at [dozzle.dev](https://dozzle.dev/guide/getting-started).
 
 ## Swarm Mode
+## By Mudassir Alam
 
 Dozzle works with Docker Swarm mode. You can run Dozzle as a global service with:
 
